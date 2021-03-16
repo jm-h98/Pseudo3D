@@ -89,5 +89,5 @@ void draw(){
   }
   if(outline)
     outline(0, 255);
-  translate(image.width/2, image.height/2, (765/2));
+  translate(image.width/2, image.height/2, (255/2));
 }
