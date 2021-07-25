@@ -31,11 +31,9 @@ void calcPicture(){
   for(int y = 0; y < image.height - 1; y++){
     for(int x = 1; x < image.width - 1; x++){
       color pix = image.pixels[x + y * image.width];
-      
       float h = hue(pix);
       float s = saturation(pix);
       float b = brightness(pix);
-      
       if((pixSize == 1 || (y % pixSize - 1 == 0 && x % pixSize - 1 == 0)) && b > 5){
         spheres.add(new PVector(x,y,h));
         colors.add(new PVector(h, s, b));
